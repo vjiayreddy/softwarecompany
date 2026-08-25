@@ -1,9 +1,8 @@
 import { HeaderClient } from './Component.client'
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { site } from '@/mock/site'
 import React from 'react'
 
-export async function Header() {
-  const headerData = await getCachedGlobal('header', 1)()
-
-  return <HeaderClient data={headerData} />
+/** Track A: chrome from mocks — Payload Header global wired in Track B. */
+export function Header() {
+  return <HeaderClient site={site} />
 }

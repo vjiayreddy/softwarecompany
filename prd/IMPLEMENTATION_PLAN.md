@@ -1,5 +1,9 @@
 # Zeftrosoft Complete Implementation Plan
 
+> **Current authority:** [UI_FIRST_IMPLEMENTATION_PLAN.md](./UI_FIRST_IMPLEMENTATION_PLAN.md)  
+> Track A = all pages UI + mock data first · Track B = Payload/CMS wiring after UI gate.  
+> This file keeps architecture, IA, CMS sketches, and launch DoD as reference; **phase order below is superseded** by the UI-first split.
+
 Source: [Software Consultancy Website.pdf](./Software%20Consultancy%20Website.pdf) + [DESIGN.md](../DESIGN.md) + current template at `src/`.
 
 **Goal:** Premium consultancy marketing site that generates qualified leads and proves technical credibility — one Next.js + Payload 3 app on MongoDB Atlas.
