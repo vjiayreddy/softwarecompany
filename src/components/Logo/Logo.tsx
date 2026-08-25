@@ -8,22 +8,18 @@ interface Props {
 }
 
 export const Logo = (props: Props) => {
-  const { loading: loadingFromProps, priority: priorityFromProps, className } = props
-
-  const loading = loadingFromProps || 'lazy'
-  const priority = priorityFromProps || 'low'
+  const { className } = props
 
   return (
-    /* eslint-disable @next/next/no-img-element */
-    <img
-      alt="Payload Logo"
-      width={193}
-      height={34}
-      loading={loading}
-      fetchPriority={priority}
-      decoding="async"
-      className={clsx('max-w-[9.375rem] w-full h-[34px]', className)}
-      src="https://raw.githubusercontent.com/payloadcms/payload/3.x/packages/ui/src/assets/payload-logo-light.svg"
-    />
+    <span
+      className={clsx(
+        'inline-flex items-center gap-1.5 text-[1.125rem] font-medium tracking-tight text-foreground',
+        className,
+      )}
+      aria-label="Zeftrosoft"
+    >
+      <span className="size-2 shrink-0 rounded-full bg-primary" aria-hidden />
+      Zeftrosoft
+    </span>
   )
 }
